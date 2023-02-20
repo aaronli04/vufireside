@@ -14,7 +14,7 @@ const Obligations = () => {
         You're busy, so are we.
       </Text>
       <Text>
-        Optional fireside chats once a month.
+        Everything is optional.
       </Text>
     </VStack>
   )
