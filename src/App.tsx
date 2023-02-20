@@ -1,25 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+  Flex,
+} from '@chakra-ui/react'
+import Thesis from './components/Thesis';
+import Header from './components/Header';
+import Resources from './components/Resources';
+import Obligations from './components/Obligations';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Flex direction='column' justifyContent='flex-start' alignItems='center' m={20} gap={5}>
+      <Header />
+      <Thesis />
+      <Resources />
+      <Obligations />
+    </Flex>
   );
 }
 
